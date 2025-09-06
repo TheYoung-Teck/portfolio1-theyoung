@@ -1,0 +1,41 @@
+<!-- Time of making this exercice (12:03 AM 8/29/2025)-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset = "utf-8">
+    <title>Manipulation de dates</title>
+  </head>
+  
+  <body>
+    <input type="date" id="inputDate">
+    <p id="resultDate"></p>
+    
+    
+    
+  <script>
+    const datas = document.getElementById("inputDate");
+    const numbdate = document.getElementById("resultDate");
+    
+    datas.addEventListener("input", function() {
+      const value = datas.value;
+      const dateObj = new Date(value);
+      
+      const jour = dateObj.getDate();
+      const mois = dateObj.getMonth() + 1;
+      const annee = dateObj.getFullYear();
+      
+      numbdate.textContent = `Jour : ${jour}, Mois : ${mois}, Année : ${annee}`;
+      
+    });
+    
+    
+    
+    </script>
+    
+    
+    
+    
+  </body>
+  
+</html>

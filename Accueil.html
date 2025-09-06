@@ -1,0 +1,195 @@
+<!-- Time of making this exercice (10:59 PM 9/1/2025)-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset ="utf-8">
+    <title>Portfolio personnel</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  
+  <body>
+    <!-- les boutons en-tête de page -->
+   <section id="accueil">
+    <header>
+      <br>
+     <h2>
+       <span class="nom">ZOHOUNVO</span> <span class=prenom>BRICE</span>
+       </h2>
+     <nav>
+       <a href="#accueil">Accueil</a>
+       <a href="#apropos">A propos</a>
+       <a href="#projets">Projets</a>
+       <a href="#competencies">Compétences</a>
+       <a href="#contacts">Contacts</a>
+     </nav>
+      <br>
+    </header>
+     <br>  <br> 
+     <div class="pic">
+        <div>
+          <p class="declar">Je suis <span class="prenom">Brice</span>, Développeur en devenir passionné par le Web et le design !</p>
+       </div>
+       <div class="img">
+          <img src="It is easy.png"/>
+       </div>
+     </div>
+     
+     <div class="projets">
+        <button onclick="listprojects()">Voir mes projets</button>
+     </div>
+    </section>
+    
+    
+<section id="apropos">
+      <br>
+      <h3><center>A propos</center></h3>
+      <div class="about">
+        <div>
+          <p>Je m'appelle <span class="prenom">Brice</span>, passionné par la <br>création des sites web modernes et interactifs.</p>
+          <p>Je suis actuellement étudiant en <span class="prenom">développement web</span>,<br> et je cherche à améliorer mes compétences en Javascript, HTML et CSS.</p>
+          <p>J'adore transformer mes idées en projets concrets<br> et expérimenter les nouvelles technologies.</p>
+
+          <button onclick="download()">Télécharger mon CV</button>
+        </div>
+ 
+      <div class="img">
+        <img src="It is easy.png" alt="Développement personnel"/>
+      </div>
+      </div>
+ </section>    
+    
+<section id="projets">
+      <br>
+      <h3>Mes projets</h3>
+      <div class="container-projects">
+        <div class="projets-box">
+        <p>Ici, nous vous mettons un jeu de devinette à couper le souffle, envie de découvrir more ?</p>
+        <!-- <a href="see">Voir</a> -->
+        <button onclick="window.open('exercice1.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=300')">Voir</button>
+        </div>
+        <div class="projets-box">
+     <p>Ici, nous vous mettons un jeu de devinette à couper le souffle, envie de découvrir more ?</p>
+        <!-- <a href="see">Voir</a> -->
+        <button onclick="window.open('exercice2.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=300')">Voir</button>
+        </div>
+        <div class="projets-box">
+      <p>Ici, nous vous mettons un jeu de devinette à couper le souffle, envie de découvrir more ?</p>
+        <!-- <a href="see">Voir</a> -->
+        <button onclick="window.open('exercice3.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=300')">Voir</button>
+        </div>
+      </div>
+    </section>
+
+    
+     
+    <section id="competencies">
+<br>
+      <h3>Mes Compétences</h3>
+        <div class="competencies-container">
+          
+          <div class="competencies-box">
+            <h4>Soft skills</h4>
+            
+            <div class="skill">
+              <span class="skill-name">Gestions des projets</span>
+              <div class="progress-bar">
+                <div class="progress" data-progress="40"></div>
+              </div>
+            </div>
+            
+            <div class="skill">
+            <span class="skill-name">Résolution des poblèmes</span>
+            <div class="progress-bar">
+              <div class="progress" data-progress="80"></div>
+            </div>
+          </div>
+            
+            <div class="skill">
+              <span class="skill-name">Adaptabilité</span>
+              <div class="progress-bar">
+                <div class="progress" data-progress="12"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="competencies-box">
+            <h4>Hard skills</h4>
+            
+            <div class="skill">
+              <span class="skill-name">HTML</span>
+              <div class="progress-bar">
+                <div class="progress" data-progress="18"></div>
+              </div>
+            </div>
+            
+          <div class="skill">
+            <span class="skill-name">CSS</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="60"></div>
+          </div>
+         </div>
+      
+      
+      <div class="skill">
+        <span class="skill-name">Java-script</span>
+        <div class="progress-bar">
+          <div class="progress" data-progress="90"></div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contacts">
+    <main>
+    <div class="containers" role="main">
+    <h4>
+      Vous avez un <span class="prenom">projet en tête ?</span><br>N'hésitez pas à <span class="prenom"> me contacter</span>
+      </h4>
+    <form id="contactform" nonvalidate>
+      <div class="row">
+        <div style="flex:1;">
+          <label for="prename">Votre prenom</label>
+          <input type="text" id="prename" placeholder="Brice" required />
+        </div>
+        <div style="flex:1;">
+          <label for="name">Votre nom</label>
+          <input type="text" id="nom" placeholder="ZOHOUNVO" required />
+        </div>
+    </div>
+    <div>
+      <label for="subject">Votre sujet</label>
+      <input type="text" id="sujet" placeholder="Développement d'un site vitrine" required />
+    </div>
+    <div>
+      <label for="message"></label>
+      <textarea id="messag" id="message" placeholder="Ecrivez votre message ici..." required></textarea>
+    </div>
+    <button type="submit">Envoyer</button>
+  </form>
+    </div>
+    </main>
+  
+    <footer>
+      <div>
+        Designed by <a href="#" id="designerLink">Brice</a> with HTML CSS JS
+      </div>
+      <div>
+        Tous droits reservés - 2025
+      </div>
+      
+    </footer>
+
+          
+ </section>
+
+<script src="script.js"></script>
+    
+  </body>
+  
+  
+</html>

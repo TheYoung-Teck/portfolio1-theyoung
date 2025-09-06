@@ -1,0 +1,66 @@
+<!-- Time of making this exercice (1:13 PM 8/28/2025)-->
+
+<!DOCTYPE html> 
+<html lang="fr"> 
+  <head> <meta charset ="utf-8"> 
+    <title></title> 
+  </head> 
+  <body> 
+    
+    <!-- Calcul de la racine carrée -->
+    <input type ="number" id="name" placeholder="Entrez un nombre" min="0"> 
+    <p id="racinecarre"></p> 
+    <!-- Nombre à arrondi -->
+  <!--  <input type ="number" id="numb" placeholder="Entrez un nombre"> -->
+    <p id="result"></p>
+    
+    <br>
+    <br>
+    <!-- Générer un numéro -->
+    <button onclick="Genener()">Générer</button>
+    <p id="Generate"></p>
+
+    <script> 
+      const inputField = document.getElementById("name"); 
+      // const numb = inputField.value 
+      
+      // Récupération de l'information du paragraph 1
+      const resultDisplay = document.getElementById("racinecarre"); 
+      
+    // Récupération de l'information du paragraph 2   
+      const answe = document.getElementById("result");
+      
+      // Ecoute de la donnée saisie par l'utilisateur
+      inputField.addEventListener("input", function () { 
+        const value = parseFloat(inputField.value); 
+        const racine = Math.sqrt(value); // Racine carrée
+        
+        const arrondi = Math.round(racine); // Arrondi du resulat de la racine carrée 
+        
+        resultDisplay.textContent = `La racine carrée de ${value} = ${racine}`;
+        
+        answe.textContent = `L'arrondi de ce nombre ${racine} (résultat ci-dessus) = ${arrondi}`
+      });  
+    
+      // Pour la génération du nombre aléatoire
+      function genererNombreAleatoire() {
+        return Math.floor(Math.random() * 101);
+      }
+      
+      function Genener() {
+        const nombre = genererNombreAleatoire();
+        document.getElementById("Generate").textContent = "Nombre : " + nombre;
+      }
+      
+      
+    // const put = document.getElementById("numb");
+   // const answe = document.getElementById("result")
+     
+    // put.addEventListener("input", function() {
+    //   const value = parseFloat(put.value);
+   //    const arrondi = Math.round(value);
+    //   answe.textContent = `L'arrondi le plus proche de ${value} est : ${arrondi}`
+    // }) //
+    </script> 
+  </body> 
+</html>

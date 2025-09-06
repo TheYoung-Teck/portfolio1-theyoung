@@ -1,0 +1,39 @@
+<!-- Time of making this exercice (3:14 AM 8/27/2025)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulation des chaines de caractères</title>
+  </head>
+  
+  <body>
+    <input type ="text" id="textInput" placeHolder="Entrez vos caractères">
+    <p id="lengthtext"></p>
+    <p id="souschaine"></p>
+    
+    <script>
+      // Récupération de la donnée saisie
+      const inputField = document.getElementById("textInput");
+      
+      // écoutez les données saisies par l'utilisateur 
+      inputField.addEventListener("input", function() {
+        const chaine = inputField.value; // récupération de la chaîne
+        
+      //calcul de la longueur  
+        const longueur = chaine.length;
+        
+      // Affichage du nombre  
+        document.getElementById("lengthtext").textContent = "Votre donnée a une longueur de : " + longueur;
+        
+      // extraction des subChaines
+        const subChaine = chaine.substring (0, 3);
+        document.getElementById("souschaine").textContent= "Les trois premiers caractères de vos données sont : " + subChaine;
+        
+      })   
+    
+    </script>
+    
+  </body>
+  
+</html>

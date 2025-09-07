@@ -1,0 +1,10 @@
+
+
+The link to access is the below :
+
+https://theyoung-teck.github.io/portfolio1-theyoung/
+
+Thanks for the resources.
+
+Nota : The option responsive is not working for the moment, unless we put the code. It seems Something is missing. 
+	For the moment, we submit but we'll keep working on to achieve the goal.

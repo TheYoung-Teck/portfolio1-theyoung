@@ -10,6 +10,10 @@ nav {
   gap: 30px;
 }
 
+nav a {
+  color: white;
+}
+
 h2 {
   margin-left: 80px;
 }
@@ -60,7 +64,7 @@ section {
   margin-top: 20px;
   width: 300px;
   height: auto;
-  border-radius: 20px;
+  border-radius: 150px;
 
 }
 
@@ -81,7 +85,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 350px;
+  gap: 310px;
   line-height: 25px;
 }
 
@@ -89,7 +93,11 @@ section {
   margin-top: 20px;
   width: 300px;
   height: auto;
-  border-radius: 300px;
+  border-radius: 100%;
+  border-width: 4px;
+  border-style: dashed;
+  border-color: #00CFC1;
+
 }
 
 /*Pour la partie mes projets*/
@@ -151,8 +159,6 @@ body {
   margin: 5px;
 }
 
-
-
 #competencies {
   background: #f2f2f2;
 }
@@ -184,7 +190,7 @@ body {
   text-align: center;
 }
 
-.skill{
+.skill {
   margin-bottom: 28px;
 }
 
@@ -304,7 +310,7 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 button:hover {

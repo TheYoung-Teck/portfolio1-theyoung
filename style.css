@@ -342,6 +342,12 @@ footer a:hover{
   .row {
     flex-direction: column
   }
+ .menu {
+    display: none;
+  }
+ .mobile-menu {
+    display: block;
+  }
 }
 
 
